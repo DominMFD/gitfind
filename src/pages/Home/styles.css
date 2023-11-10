@@ -1,0 +1,129 @@
+.conteudo {
+    position: relative;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.background {
+    height: 95vh;
+    position: absolute;
+    left: 0;
+}
+
+.info {
+    width: 60%;
+    max-width: 1024px;
+    margin-right: 90px;
+    margin-top: 40px;
+    color: aliceblue;
+}
+
+.info-pesquisar {
+    width: 100%;
+    display: flex;
+}
+
+input {
+    border: 1px solid #999;
+    border-radius: 22px;
+    min-width: 250px;
+    margin-right: 12px;
+    width: 85%;
+    background: transparent;
+    font-size: 18px;
+    padding: 8px;
+    color: #FFF
+}
+
+input:placeholder-shown {
+    color: #999999c5
+}
+
+button {
+    border: 1px solid #999;
+    width: auto;
+    border-radius: 22px;
+    margin-right: 12px;
+    color: #FFF;
+    background: #2D333B;
+    font-size: 18px;
+    padding: 8px 50px;
+    transition: opacity .5s;
+    letter-spacing: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: .6;
+}
+
+.perfil {
+    display: flex;
+    margin: 50px 0;
+}
+
+.perfil-imagem {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #E5E5E5;
+    margin-right: 32px;
+}
+
+.profile h3 {
+    color: #999;
+    font-size: 24px;
+    margin: 0;
+}
+
+.profile span {
+    display: block;
+    color: #999;
+    font-size: 12px;
+    margin: 0;
+}
+
+.profile p {
+    color: #999;
+    font-size: 12px;
+    margin: 20px 0 0 0;
+}
+
+.repositorio {
+    font-size: 32px;
+    color: #FFF;
+    margin: 12px 0 100px 0;
+    text-align: center;
+}
+
+a {
+    margin-top: 20px;
+    text-decoration: none;
+    transition: filter .5s;
+}
+
+a:hover {
+    filter: brightness(200%);
+}
+
+
+@media screen and (max-width: 689px) {
+    .info-pesquisar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .conteudo {
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    button {
+        padding: 8px 40px;
+    }
+
+    input {
+        width: 50%;
+    }
+}
